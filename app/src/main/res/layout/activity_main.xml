@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Multiplication Quiz" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:background="@drawable/math_back">
+
+
+
+        <TextView
+            android:id="@+id/textViewQuestion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:gravity="center"
+            android:visibility="gone"
+            >
+
+            <requestFocus />
+        </TextView>
+
+        <Button
+            android:id="@+id/buttonBeginner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Beginner" />
+        <Button
+            android:id="@+id/buttonIntermediate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Intermediate" />
+        <Button
+            android:id="@+id/buttonAdvanced"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Advanced" />
+
+        <Button
+            android:id="@+id/buttonoption1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:text="Option1" />
+
+        <Button
+            android:id="@+id/buttonoption2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:text="Option2" />
+
+        <Button
+            android:id="@+id/buttonoption3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:text="Option3" />
+
+        <Button
+            android:id="@+id/buttonoption4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:text="Option4" />
+
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:text="Large Text"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/buttonoptionnext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:text="Next" />
+
+        </LinearLayout>
+        <TextView
+            android:id="@+id/textViewCounter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#00F"
+            android:text="Counter"
+            />
+        <Button
+            android:id="@+id/buttonHome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:text="Home"/>
+        <Button
+            android:id="@+id/buttonExit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:textColor="#F00"
+            android:text="Exit"/>
+    </LinearLayout>
+</LinearLayout>
